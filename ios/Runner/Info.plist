@@ -46,6 +46,7 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
     <!--  share  -->
+    <!-- URL Types -->
     <key>CFBundleURLTypes</key>
     <array>
         <dict>
@@ -55,7 +56,56 @@
             <string>id.bee.sharemanual</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>ShareManualApp</string>
+                <string>sharemanual</string>
+            </array>
+        </dict>
+    </array>
+
+    <!-- Document Types -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Images</string>
+            <key>LSHandlerRank</key>
+            <string>Alternate</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.image</string>
+                <string>public.jpeg</string>
+                <string>public.png</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Videos</string>
+            <key>LSHandlerRank</key>
+            <string>Alternate</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.movie</string>
+                <string>public.video</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>PDF Documents</string>
+            <key>LSHandlerRank</key>
+            <string>Alternate</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>com.adobe.pdf</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>All Files</string>
+            <key>LSHandlerRank</key>
+            <string>Alternate</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.data</string>
+                <string>public.content</string>
             </array>
         </dict>
     </array>
